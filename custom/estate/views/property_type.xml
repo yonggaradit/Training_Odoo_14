@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="property_type_view_tree" model="ir.ui.view">
+            <field name="name">property.type.view.tree</field>
+            <field name="model">property.type</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"></field>
+
+                </tree>
+            </field>
+        </record>
+
+        <record id="property_type_view_form" model="ir.ui.view">
+            <field name="name">property.type.view.form</field>
+            <field name="model">property.type</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <!-- <div class="oe_title">
+                            <h1>
+                                <field name="name"/>
+                            </h1>
+                        </div> -->
+                        <!-- <notebook>
+                            <page name="property" string="Property">
+                                <field name="property_ids">
+                                    <tree>
+                                        <field name="name" string='Title'/>
+                                        <field name="expected_price"/>
+                                        <field name="state" string='Status'/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook> -->
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="property_type_view_search" model="ir.ui.view">
+            <field name="name">property.type.view.search</field>
+            <field name="model">property.type</field>
+            <field name="arch" type="xml">
+                <search string="Search Type Properties">
+                    <field name="name"/>
+
+                </search>
+            </field>
+        </record>
+
+        <record id="property_type_action" model="ir.actions.act_window">
+            <field name="name">Property Type</field>
+            <field name="res_model">property.type</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+
+    </data>
+</odoo>
+
+
+        
